@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise For You</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Audio -->
+    <audio id="bgMusic" loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <!-- Halaman Awal -->
+    <div id="screen-start" class="screen active">
+        <h2>Press the Envelope</h2>
+        <div class="envelope" onclick="startSurprise()">💌</div>
+        <p>Tap to open</p>
+    </div>
+
+    <!-- Menu -->
+    <div id="screen-menu" class="screen">
+        <h2>Choose the Surprise</h2>
+
+        <button class="btn" onclick="goToScreen('screen-journey')">
+            📸 Pap Kamuu
+        </button>
+
+        <button class="btn" onclick="goToScreen('screen-message')">
+            ✉️ Message
+        </button>
+    </div>
+
+    <!-- Galeri Foto -->
+    <div id="screen-journey" class="screen">
+        <h2>Best Pap My Bini 🤍</h2>
+
+        <div class="photo-marquee-container-full">
+            <div class="photo-track">
+
+                <img src="gambar/foto1.jpg" alt="">
+                <img src="gambar/foto2.jpg" alt="">
+                <img src="gambar/foto3.jpg" alt="">
+                <img src="gambar/foto4.jpg" alt="">
+                <img src="gambar/foto5.jpg" alt="">
+                <img src="gambar/foto6.jpg" alt="">
+                <img src="gambar/foto7.jpg" alt="">
+                <img src="gambar/foto8.jpg" alt="">
+                <img src="gambar/foto9.jpg" alt="">
+                <img src="gambar/foto10.jpg" alt="">
+                <img src="gambar/foto11.jpg" alt="">
+                <img src="gambar/foto12.jpg" alt="">
+                <img src="gambar/foto13.jpg" alt="">
+                <img src="gambar/foto14.jpg" alt="">
+                <img src="gambar/foto15.jpeg" alt="">
+
+                <!-- Duplikat untuk looping -->
+                <img src="gambar/foto1.jpg" alt="">
+                <img src="gambar/foto2.jpg" alt="">
+                <img src="gambar/foto3.jpg" alt="">
+                <img src="gambar/foto4.jpg" alt="">
+                <img src="gambar/foto5.jpg" alt="">
+                <img src="gambar/foto6.jpg" alt="">
+                <img src="gambar/foto7.jpg" alt="">
+                <img src="gambar/foto8.jpg" alt="">
+                <img src="gambar/foto9.jpg" alt="">
+                <img src="gambar/foto10.jpg" alt="">
+                <img src="gambar/foto11.jpg" alt="">
+                <img src="gambar/foto12.jpg" alt="">
+                <img src="gambar/foto13.jpg" alt="">
+                <img src="gambar/foto14.jpg" alt="">
+                <img src="gambar/foto15.jpeg" alt="">
+
+            </div>
+        </div>
+
+        <button class="btn" onclick="goToScreen('screen-menu')">
+            ◄ Kembali
+        </button>
+    </div>
+
+    <!-- Surat -->
+    <div id="screen-message" class="screen">
+
+        <div class="letter-card">
+
+            <p class="highlight">
+                Happy birthday cewe mantep sedep badas pengen gua mukbang rasanya 🤍
+            </p>
+
+            <div class="letter-content">
+
+                <p>
+                    Aku biasanya gabisa ni gini-ginian, tapi di hari ulang tahun kamu aku pengen jujur sedikit.
+                    Aku ga nyangka bisa sejauh ini sama kamu, dan anehnya... sama kamu semuanya kerasa beda.
+                </p>
+
+                <p>
+                    Aku tau kamu sering nyimpen capek sendiri, sering keliatan kuat padahal lagi banyak pikiran.
+                    Kamu hebat banget, dan aku seneng bisa temenin kamu kemanapun.
+                </p>
+
+                <p>
+                    Kadang kamu bikin aku bingung, kadang juga bikin aku kecintaan mampus.
+                    Tapi aku tetep seneng bisa ada di hidup kamu sampai sekarang.
+                </p>
+
+                <p>
+                    Aku cuma berharap di umur kamu yang baru ini kamu bisa lebih bahagia dan ga terlalu keras sama diri sendiri.
+                </p>
+
+                <p>
+                    And hey... please stay a little longer with me ya?
+                    Karena aku mau buktiin ke kamu kalau aku bisa kasih yang terbaik buat kamu.
+                </p>
+
+            </div>
+
+            <p class="closing">
+                Happy Birthday, My Person 🤍
+            </p>
+
+        </div>
+
+        <button class="btn" onclick="goToScreen('screen-menu')">
+            ◄ Kembali
+        </button>
+
+    </div>
+
+    <!-- Tombol Musik -->
+    <button id="musicToggle" class="music-btn">
+        🎵
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
